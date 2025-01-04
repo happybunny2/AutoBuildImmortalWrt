@@ -8,17 +8,6 @@ uci add dhcp domain
 uci set "dhcp.@domain[-1].name=time.android.com"
 uci set "dhcp.@domain[-1].ip=203.107.6.88"
 
-
-# 根据网卡数量配置网络
-count=0
-for iface in /sys/class/net/*; do
-  iface_name=$(basename "$iface")
-  # 检查是否为物理网卡（排除回环设备和无线设备）
-  if [ -e "$iface/device" ] && echo "$iface_name" | grep -Eq '^eth|^en'; then
-    count=$((count + 1))
-  fi
-done
-
 # 网络设置
 uci set network.lan.ipaddr='192.168.20.1'
 uci set network.lan.proto='static'
