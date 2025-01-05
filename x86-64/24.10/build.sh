@@ -25,7 +25,7 @@ PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES luci-i18n-uhttpd-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ddns-zh-cn"
-PACKAGES="$PACKAGES luci-i18n-openvpn-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-openvpn-server-zh-cn"
 PACKAGES="$PACKAGES luci-app-wechatpush"
 PACKAGES="$PACKAGES luci-proto-ipv6"
 
